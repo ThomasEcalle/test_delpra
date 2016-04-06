@@ -1,0 +1,12 @@
+input{transition:1s; outline:none; border:1px solid #cecece; box-shadow:none; }
+span{opacity:0; transition:0.5s;}
+
+input:required,textarea:required{background:url(asterisques.png) 98% center no-repeat;}
+input:focus:invalid,textaera:focus:invalid{border:1px solid red; background-image:none;}
+
+input:focus:invalid + span,textaera:focus:invalid+ span{opacity:1; color:red;}
+
+
+
+input:focus:valid,textaera:focus:valid{border:1px solid green;}
+input:valid,textaera:valid{background-image:none;}
